@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@layer components {
+    .dumbbell {
+        @apply hover:bg-slate-600 hover:rounded-[10px] transition-all duration-300 ease-linear
+        hover:cursor-pointer;
+    }
+    .sidebar-icon {
+        @apply relative flex items-center justify-center h-12 w-12 my-4 mx-auto shadow-lg
+        hover:bg-accent_blue hover:rounded-[10px] hover:cursor-pointer hover:ring-blue-700 hover:ring-2
+        transition-all duration-300 ease-linear;
+    }
+    .sidebar-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
+        text-white bg-grey_lighter text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
